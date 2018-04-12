@@ -4,7 +4,7 @@
   --formfg: #e4c9c2;
   --opacityselected: 1;
   --opacity: 0;
-  --font: scientifica, SF Mono, Lucida Grande;
+  --font: cherry, SF Mono, Lucida Grande;
   --fontsize: 11px;
   --height: 21px;
   --positionvertical: calc(50% + calc(var(--height) * -0.5));
@@ -92,7 +92,7 @@ input {
 .form2 {
   top: var(--positionvertical);
   border-left: var(--bordersize) solid #728797;
-  background-color: #728797;
+  background-color: #DA5A69;
   opacity: var(--opacity);
 }
 
@@ -135,8 +135,8 @@ input {
 
 .form6 {
   top: var(--positionvertical);
-  border-left: var(--bordersize) solid #F7936B;
-  background-color: #F7936B;
+  border-left: var(--bordersize) solid #656687;
+  background-color: #656687;
   opacity: var(--opacity);
 }
 
@@ -146,12 +146,34 @@ input {
 
 .form7 {
   top: var(--positionvertical);
+  border-left: var(--bordersize) solid #F7936B;
+  background-color: #F7936B;
+  opacity: var(--opacity);
+}
+
+.form7:focus, .form7:hover {
+  opacity: var(--opacityselected);
+}
+
+.form8 {
+  top: var(--positionvertical);
+  border-left: var(--bordersize) solid #656687;
+  background-color: #656687;
+  opacity: var(--opacity);
+}
+
+.form8:focus, .form7:hover {
+  opacity: var(--opacityselected);
+}
+
+.form9 {
+  top: var(--positionvertical);
   border-left: var(--bordersize) solid #DA5A69;
   background-color: #DA5A69;
   opacity: var(--opacity);
 }
 
-.form7:focus, .form7:hover {
+.form9:focus, .form7:hover {
   opacity: var(--opacityselected);
 }
 

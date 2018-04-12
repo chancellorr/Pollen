@@ -51,7 +51,7 @@
 		<form method="get" action="https://en.wikipedia.org/wiki/Special:Search?">
 			<input type="text" name="search" class="form3" maxlength="180" placeholder="wikipedia" autocomplete="off" />
 		</form>
-		
+
 		<form method="get" action="https://amazon.com/">
 			<input type="text" class="form4" name=”field-keywords" maxlength="180" placeholder="amazon" autocomplete="off" />
 		</form>
@@ -60,12 +60,20 @@
 			<input type="text" class="form5" maxlength="180" placeholder="reddit" autocomplete="off" />
 		</form>
 
-		<form method="get" action="https://facebook.com/">
-			<input type="text" class="form6" maxlength="180" placeholder="facebook" autocomplete="off" />
+		<form method="get" action="http://192.168.1.44:8081/home/">
+			<input type="text" class="form6" maxlength="180" placeholder="sickrage" autocomplete="off" />
+		</form>
+
+		<form method="get" action="http://192.168.1.44:5050/">
+			<input type="text" class="form7" maxlength="180" placeholder="couch potato" autocomplete="off" />
+		</form>
+
+		<form method="get" action="http://192.168.1.44:8112/">
+			<input type="text" class="form8" maxlength="180" placeholder="deluge" autocomplete="off" />
 		</form>
 
 		<form method="get" action="https://netflix.com/">
-			<input type="text" class="form7" placeholder="netflix" autocomplete="off" />
+			<input type="text" class="form9" placeholder="netflix" autocomplete="off" />
 		</form>
 
 	</div>
@@ -85,7 +93,7 @@
 
 	formEl.addEventListener('submit', evt => {
 	evt.preventDefault()
- 	
+
 	const searchTerm = inputEl.value
 	const isUrl = isValidUrl(searchTerm)
 
